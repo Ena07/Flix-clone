@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #000;
+    margin: 0;
+    overflow:scroll;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+/* Navigation */
+#navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
+#brand, .Nav-menu{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.Nav-menu-item-button{
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+}
+
+/* Hero */
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)),url('/images/netflix-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    font-size:64px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 5px;
+}
+.sub-header{
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+p{
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+}
+#Submission-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-address{
+    font-size: 16px;
+    height: 70px;
+    width: 500px;
+    padding-left: 20px;
+    border: none;
+}
+#submit{
+    font-size: 16px;
+    font-weight: 600;
+    height: 70px;
+    width: 250px;
+    background: red;
+    color: #fff;
+    border: none;
+}
+
+/* Our Story */
+#our-story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h3-sub-header{
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+    max-width: 500px;
+}
+.col-right{
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    height: 100%;
+    width: 48%;
+}
+.our-story-container{
+    overflow: hidden;
+    position: relative;
+}
+.our-story-image{
+    position: relative;
+    z-index: 2;
+}
+.our-story-video-container{
+    height: 100%;
+    left: 50%;
+    max-height: 54%;
+    max-width: 73%;
+    position: absolute;
+    top: 46%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.our-story-video{
+    object-fit: contain;
+}
